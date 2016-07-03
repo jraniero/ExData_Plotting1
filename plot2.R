@@ -1,3 +1,5 @@
+#The consumption.csv file was created using unix commands on the original file
+#A couple of grep commands were used to select the data only relevant to the dates being analyzed
 power<-read.csv("consumption.csv",sep=";",dec=".",na.strings="?",stringsAsFactors = FALSE)
 par(mfrow=c(1,1))
 Sys.setlocale("LC_TIME","en_US") #Required on non en_US systems to get the week days in english
